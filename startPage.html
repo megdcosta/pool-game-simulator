@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pool Game</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var form = document.querySelector("form");
+        form.onsubmit = function(e) {
+            localStorage.setItem("player1_name", document.getElementById("player1_name").value);
+            localStorage.setItem("player2_name", document.getElementById("player2_name").value);
+        };
+    });
+  </script>
+</head>
+<body>
+  <form action="megano.html" method="post">
+    <h2>START A GAME</h2>
+    <div class="input-container">
+      <div class="input-group">
+        <label for="player1_name">PLAYER 1</label>
+        <input type="text" id="player1_name" name="player1_name" required aria-label="Player 1 name" />
+      </div>
+      <div class="input-group">
+        <label for="player2_name">PLAYER 2</label>
+        <input type="text" id="player2_name" name="player2_name" required aria-label="Player 2 name" />
+      </div>
+    </div>
+    <button type="submit" class="start-button" aria-label="Begin game">BEGIN</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container"> 
+        <header>
+            <h1>POOL GAME</h1>
+        </header>
+        <main>
+            <aside>
+                <h2>Players</h2>
+                <ul id="player-info">
+                    <li id="player1">Player 1: Megan</li>
+                    <li id="player2">Player 2: Melanie</li>
+                </ul>
+            </aside>
+            <article id="table">
+                <h2>Pool Table</h2>
+                <figure>
+                    <svg id="pool-table" width="100%" viewBox="0 0 1350 2750" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="1350" height="2700" fill="#C0D0C0" />
+                        <rect width="1350" height="25" x="0" y="0" fill="darkgreen" />
+                        <rect width="1350" height="25" x="0" y="2675" fill="darkgreen" />
+                        <rect width="25" height="2700" x="0" y="0" fill="darkgreen" />
+                        <rect width="25" height="2700" x="1325" y="0" fill="darkgreen" />
+                        <circle cx="25" cy="25" r="114" fill="black" />
+                        <circle cx="25" cy="1350" r="114" fill="black" />
+                        <circle cx="25" cy="2675" r="114" fill="black" />
+                        <circle cx="1325" cy="25" r="114" fill="black" />
+                        <circle cx="1325" cy="1350" r="114" fill="black" />
+                        <circle cx="1325" cy="2675" r="114" fill="black" />
+                        <circle id="cue-ball" cx="675" cy="2025" r="28" fill="white" />
+                        <circle cx="675" cy="1000" r="28" fill="yellow" />
+                        <circle cx="640" cy="940" r="28" fill="blue" />
+                        <circle cx="710" cy="940" r="28" fill="red" />
+                        <circle cx="675" cy="880" r="28" fill="black" />
+                        <circle cx="605" cy="880" r="28" fill="purple" />
+                        <circle cx="745" cy="880" r="28" fill="green" />
+                        <circle cx="570" cy="820" r="28" fill="brown" />
+                        <circle cx="640" cy="820" r="28" fill="orange" />
+                        <circle cx="710" cy="820" r="28" fill="lightyellow" />
+                        <circle cx="780" cy="820" r="28" fill="lightblue" />
+                        <circle cx="535" cy="760" r="28" fill="pink" />
+                        <circle cx="605" cy="760" r="28" fill="mediumpurple" />
+                        <circle cx="675" cy="760" r="28" fill="lightsalmon" />
+                        <circle cx="745" cy="760" r="28" fill="lightgreen" />
+                        <circle cx="815" cy="760" r="28" fill="sandybrown" />
+                    </svg>
+                </figure>
+            </article>
+            <section id="coordinates">
+                <h2>Coordinates</h2>
+                <p>X: <span id="x">0</span></p>
+                <p>Y: <span id="y">0</span></p>
+            </section>
+            <footer class="game-footer">
+                <nav>
+                    <form action="/startPage.html" method="get">
+                        <button type="submit">Restart Game</button>
+                    </form>
+                </nav>
+            </footer>
+        </main>
+        <footer class="main-footer">
+            <p>&copy; 2024 Pool Game. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

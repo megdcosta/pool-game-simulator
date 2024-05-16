@@ -1,0 +1,111 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: auto; /* Enable vertical scroll if needed */
+  background-color: #49243E; /* primary color */
+  font-family: 'Ubuntu', sans-serif; /* Roboto font */
+  color: #DBAFA0; /* accent color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Container for better control */
+.container {
+  width: 100%;
+  max-width: 100vw;
+  position: relative; /* For absolute positioning context */
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#table, #coordinates {
+  width: 90%;
+  max-width: 700px; /* Set max-width according to SVG width */
+  margin: 0 auto; /* Centering */
+}
+
+/* Header and main content styling */
+header {
+  margin-bottom: 2rem;
+}
+
+/* Styling for headings */
+h1, h2 {
+  color: #DBAFA0; /* Accent color for headings */
+  margin: 0.5em 0;
+}
+
+/* Input and Label styling */
+input, label {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  background-color: #49243E; /* Primary color for input background */
+  border: 2px solid #BB8493; /* Secondary color for border */
+  color: #DBAFA0; /* Accent color for text */
+}
+
+label {
+  text-align: left;
+}
+
+/* Button styling */
+button, input[type="submit"] {
+  background-color: #BB8493; /* Secondary color */
+  color: #DBAFA0; /* Accent color */
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  margin-top: 1em;
+}
+
+button:hover, input[type="submit"]:hover {
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+  background-color: #DBAFA0; /* Accent color for button hover */
+  color: #49243E; /* Primary color for text on button hover */
+}
+
+/* Footer styling */
+.game-footer, .main-footer {
+  color: #DBAFA0; /* Accent color */
+}
+
+.game-footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #BB8493; /* Secondary color */
+}
+
+.main-footer {
+  position: absolute; /* Absolute positioning */
+  bottom: 0; /* At the bottom */
+  width: 100%; /* Full width */
+  text-align: center;
+  padding: 10px;
+  background-color: #BB8493; /* Secondary color */
+}
